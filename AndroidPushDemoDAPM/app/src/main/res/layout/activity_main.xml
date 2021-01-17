@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/LinearLayout1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#929DA6"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0.12"
+            android:text="service_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <ProgressBar
+            android:id="@+id/loadingProgressBar"
+            android:layout_width="28dp"
+            android:layout_height="28dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#302020"
+        android:padding="6dp">
+
+        <EditText
+            android:background="#A8A7A7"
+            android:id="@+id/textNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weigth="1"
+            android:ems="10"
+            android:hint="text_box">
+            <requestFocus/>
+        </EditText>
+
+        <Button
+            android:id="@+id/ButtonAdd"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:onClick="addItem"
+            android:text="@string/button_add"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/lista"
+        android:padding="6dp">
+    </ListView>
+
+</LinearLayout>

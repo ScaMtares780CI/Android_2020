@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidPushDemoDAPM</string>
+    <string name="service_title">Mobile service</string>
+    <string name="text_box">Ingresa algun texto y agrega</string>
+    <string name="button_add">Add</string>
+    <string name="checkbox_text">Texto de Item</string>
+</resources>
